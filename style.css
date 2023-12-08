@@ -1,0 +1,80 @@
+/* Font import */
+
+@font-face {
+  font-family: "AvantGardeGothicMedium";
+  src: url(../fonts/Medium.otf);
+}
+
+/* Custom Properties for colors */
+
+:root {
+  --primaryColor: #46aa64;
+  --secundaryColor: #0a3250;
+  --tertiaryColor: #d4e9db;
+  --grey: #dfe4e5;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+/* Betere kleurcontrast (groen) voor mensen die dit willen */
+
+@media (prefers-contrast: more) {
+  :root {
+    --primaryColor: 135c29;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: normal normal normal 16px/1.5 "AvantGardeGothicMedium";
+}
+
+/* Styling van de top bar */
+
+.top-bar {
+  width: 100%;
+  height: 60px;
+  background-color: var(--tertiaryColor);
+  border-bottom: 5px solid var(--grey);
+}
+
+.aanmeld-top {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  padding-top: 1em;
+  padding-right: 1em;
+  gap: 2em;
+}
+
+a {
+  font-size: 35px;
+}
+span {
+  font-weight: bold;
+}
+
+.logo {
+  color: var(--primaryColor);
+}
+
+.navigation {
+  display: flex;
+  height: 10em;
+  padding: 1em 1em 1em 3em;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+
+.intro {
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
